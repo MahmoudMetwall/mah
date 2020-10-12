@@ -1,0 +1,259 @@
+.infobox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 0px 100px;
+  height: 100%;
+  padding: 10px;
+}
+
+.infobox h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 15px 0;
+  font-weight: 700;
+  color: rgb(237, 78, 73);
+  margin: 0 auto;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  margin-top: 100px;
+  text-decoration: underline;
+}
+
+.infobox .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 25px;
+}
+
+.infobox .items h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(237, 78, 73);
+  margin: 0 auto;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.infobox .post {
+  padding: 5px;
+  width: 50%;
+  height: 430px;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.infobox .post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  align-self: center;
+}
+
+.infobox .info ul {
+  color: #fff;
+  font-size: 26px;
+  list-style: none;
+}
+
+.infobox .info li {
+  margin-bottom: 20px;
+}
+
+.videoPart {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  width: 100%;
+  height: 600px;
+}
+
+.videoPart .trailer h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(237, 78, 73);
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.videoPart .video {
+  height: 93%;
+}
+
+.videoPart .video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1070px) {
+  .infobox .post {
+    width: 100%;
+  }
+
+  .infobox h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  .infobox .info ul {
+    font-size: 1em;
+    list-style: none;
+  }
+
+  .infobox .items h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 606px) {
+  .infobox {
+    margin: 25px 5px;
+  }
+
+  .infobox .post {
+    width: 100%;
+    height: 100%;
+  }
+
+  .videoPart {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    width: 100%;
+    height: 400px;
+  }
+
+  .videoPart .video {
+    height: 90%;
+  }
+}
+
+/* STORY SECTION */
+.storybox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 50px 100px;
+  padding: 10px;
+}
+
+.storytxt {
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.storybox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(237, 78, 73);
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.links {
+  position: relative;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 25px;
+  width: 40%;
+  font-size: 30px;
+  border: 2px rgb(237, 78, 73) solid;
+}
+
+.links h1 {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(237, 78, 73);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.buttons {
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons * {
+  text-decoration: none;
+  color: rgb(237, 78, 73);
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 5px;
+  border: 2px rgb(237, 78, 73) solid;
+  text-align: center;
+  width: 75px;
+  height: 25px;
+  padding: 5%;
+  margin: 5%;
+}
+
+.buttons *:hover {
+  background-color: rgb(237, 78, 73);
+  color: white;
+  border: 2px white solid;
+}
+
+.more {
+  text-align: center;
+}
+
+.more h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(237, 78, 73);
+  margin: 0 auto;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.more a {
+  text-decoration: none;
+  color: rgb(237, 78, 73);
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 5px;
+  border: 2px rgb(237, 78, 73) solid;
+  padding: 3%;
+}
+
+.more a:hover {
+  background-color: rgb(237, 78, 73);
+  color: white;
+  border: 2px white solid;
+}
+
+@media (max-width: 1070px) {}
+
+@media (max-width: 606px) {
+  .storybox {
+    margin: 10px 0;
+  }
+
+  .links {
+    float: none;
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  .storybox h2 {
+    font-size: 2em;
+    margin: 25px 0;
+  }
+}
