@@ -1,0 +1,152 @@
+/*SECTION Movies*/
+.Movies {
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.Movies .cont {
+  margin: 0 10%;
+}
+
+.Movies .cont .show {
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+  .Movies .cont .show {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Movies .item .info {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Movies .cont .show {
+    grid-template-columns: 1fr;
+  }
+
+  .Movies .item .info {
+    font-size: 5.5vw;
+  }
+}
+
+/* SECTION ITEMS */
+.Movies .item {
+  position: relative;
+  padding: 1px;
+  background-color: var(--normalColor);
+}
+
+.Movies .item:hover>.info {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.Movies .item p {
+  text-align: center;
+}
+
+.Movies .genere {
+  margin: 0 25px;
+}
+
+.Movies img {
+  width: 100%;
+  height: 100%;
+}
+
+.Movies .item .info {
+  opacity: 0;
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.Movies .item .info h1 {
+  font-size: 26px;
+  color: var(--normalColor);
+}
+
+.Movies .item .info .rate {
+  display: flex;
+  align-items: center;
+}
+
+.Movies .item .info>p, .Movies .item .info .rate {
+  padding: 10px 0;
+}
+
+.Movies .item .info .rate .icon {
+  color: yellow;
+  padding-right: 4px;
+}
+
+.Movies .item .info .age {
+  display: flex;
+  align-items: center;
+}
+
+.Movies .item .info>p, .Movies .item .info .age {
+  padding: 10px 0;
+}
+
+.Movies .item .info .age .icon {
+  color: red;
+  padding-right: 4px;
+}
+
+.Movies .item .info .date {
+  display: flex;
+  align-items: center;
+}
+
+.Movies .item .info>p, .Movies .item .info .date {
+  padding: 10px 0;
+}
+
+.Movies .item .info .date .icon {
+  color: rgb(76, 110, 245);
+  padding-right: 8px;
+}
+
+/* BUTTON */
+.linkMore {
+  width: 100px;
+  text-align: center;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px var(--textColor) solid;
+  border-radius: 5px;
+  background-color: var(--back1);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.linkMore:hover {
+  background-color: var(--normalColor);
+}
+
+.linkMore a {
+  text-decoration: none;
+  color: var(--textColor);
+}

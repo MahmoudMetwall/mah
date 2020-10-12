@@ -1,0 +1,19 @@
+<div id="v"></div>
+<script>
+
+
+	var Today = new Date() //   
+	var Expired = new Date("07-07-2020");
+	if (Today > Expired) {
+		var txt = 'Valid';
+		document.getElementById("v").innerHTML = txt;
+		document.getElementById("v").style.color = "Green";
+
+	} else {
+		var txt = 'Expired';
+		document.getElementById("v").innerHTML = txt;
+		document.getElementById("v").style.color = "red";
+	}
+
+
+</script>

@@ -1,0 +1,235 @@
+.slider-soon {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-soon .cont {
+  overflow: hidden;
+  display: grid;
+  margin: 0 10%;
+  padding-top: 100px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.slider-soon .slider {
+  position: relative;
+  width: 100%;
+  min-width: 600px;
+  height: 100%;
+}
+
+.slider-soon .slider img {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-soon .soon {
+  overflow: hidden;
+  color: white;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-soon .soon h1 {
+  text-align: center;
+  color: var(--normalColor);
+  min-width: 200px;
+  font-size: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.slider-soon .soon h1:hover {
+  color: white;
+}
+
+.slider-soon .soon ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.slider-soon .soon li {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.slider-soon .soon li div {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-soon .soon img {
+  width: 90px;
+  object-fit: contain;
+}
+
+.button-left {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-right {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-soon .circles {
+  position: absolute;
+  display: inline-flex;
+  left: 50%;
+  bottom: 0;
+  margin-bottom: 25px;
+  transform: translateX(-50%);
+}
+
+.slider-soon .circles .circle {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px white solid;
+  margin: 0 5px;
+  border-radius: 25px;
+}
+
+/*my design*/
+img{
+  width: 10px;
+  object-fit: cover;
+}
+
+.slideshowContainer {
+  position: relative;
+  overflow: hidden;
+  margin: 0px 0 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.imageSlides {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: -1;
+}
+
+/* add 'visible' class via Javascript */
+.visible {
+  opacity: 1;
+}
+
+.slideshowArrow {
+  font-size: 7em;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slideshowArrow:hover {
+  opacity: 0.75;
+}
+
+#leftArrow {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#rightArrow {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.slideshowCircles {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.circleDot {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  transition: 1s ease-in-out;
+}
+
+.dot {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 1200px) {
+  .slider-soon .cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 15px;
+  }
+
+  .slider-soon .soon {
+    margin: 0px;
+  }
+
+  .slide img {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  .slider-soon .slider {
+    min-width: 0px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 5px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .slider-soon .cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .slidershow {
+    height: 100%;
+  }
+
+  .navigation {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+  }
+}*/
